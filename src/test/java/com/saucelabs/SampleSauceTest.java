@@ -167,6 +167,7 @@ public class SampleSauceTest implements SauceOnDemandSessionIdProvider {
     @Test
     public void loginTest() throws Exception {
         driver.get("http://www.appdirect.com/");
+        Thread.sleep(5000);
         driver.findElement(By.linkText("Login")).click();
         WebDriverWait wait = new WebDriverWait(driver, 10); // wait for a maximum of 10 seconds
         WebElement emailInput = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("username")));
