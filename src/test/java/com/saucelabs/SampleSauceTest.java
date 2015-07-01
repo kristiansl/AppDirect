@@ -170,7 +170,7 @@ public class SampleSauceTest implements SauceOnDemandSessionIdProvider {
         driver.findElement(By.linkText("Login")).click();
         WebDriverWait wait = new WebDriverWait(driver, 10); // wait for a maximum of 10 seconds
         WebElement emailInput = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("username")));
-        emailInput.sendKeys("nocturnegroup@gmail.com");
+        emailInput.sendKeys("nocturnegroup@gmail.com"); 
         driver.findElement(By.id("password")).sendKeys("WhatWhat!");
         driver.findElement(By.id("id5")).click();
         Thread.sleep(5000);
